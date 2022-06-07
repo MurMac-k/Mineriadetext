@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/onto.owl"
+         xmlns="http://test.org/onto.owl#">
+
+<owl:Ontology rdf:about="http://test.org/onto.owl"/>
+
+<owl:ObjectProperty rdf:about="#Mention">
+  <rdfs:range rdf:resource="#Bird"/>
+  <rdfs:domain rdf:resource="#Post"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Bird">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Post">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<Bird rdf:about="http://dbpedia.org/resource/Dunlin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Magpie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Avocet">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Pelican">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Hoatzin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Tern">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Vulture">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Flamingo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Eagle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Booby">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Gull">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Hoopoe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Redwing">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Bird rdf:about="http://dbpedia.org/resource/Shearwater">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Bird>
+
+<Post rdf:about="#TRACKING DUNLIN IN THE FRASER ESTUARY">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Dunlin"/>
+</Post>
+
+<Post rdf:about="#Another species at the birdbath">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Post>
+
+<Post rdf:about="#A Family of Currawongs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Magpie"/>
+</Post>
+
+<Post rdf:about="#Another Lovebird visit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Post>
+
+<Post rdf:about="#Whirlwind Peru!">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Avocet"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Pelican"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Hoatzin"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Tern"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Vulture"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Flamingo"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Eagle"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Booby"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Gull"/>
+</Post>
+
+<Post rdf:about="#A Ringneck mealtime">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Post>
+
+<Post rdf:about="#A busy pair of Galahs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Post>
+
+<Post rdf:about="#Last-Minute Algarve, Portugal! Oct 26-28, 2021">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Eagle"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Hoopoe"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Redwing"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Shearwater"/>
+</Post>
+
+<Post rdf:about="#"Black" Brant in New Haven Harbor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Gull"/>
+</Post>
+
+<Post rdf:about="#A Murder in New Haven...Shocker!">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Mention rdf:resource="http://dbpedia.org/resource/Gull"/>
+</Post>
+
+
+</rdf:RDF>
